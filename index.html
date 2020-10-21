@@ -1,12 +1,119 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
-  </body>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Магазин мороженого &laquo;Глейси&raquo;. Главная страница.</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body class="page__body">
+  <header class="page__header header container">
+    <nav class="header__nav nav">
+      <a class="header__logo logo">
+        <img class="logo-image" src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глейси">
+      </a>
+      <ul class="header__nav-list">
+        <li class="header__nav-item header__nav-item_catalog">
+          <a href="catalog.html" class="header__nav-link header__nav-link_catalog">Каталог</a>
+          <ul class="header__catalog-list">
+            <li class="header__catalog-item">
+              <a href="catalog.html" class="header__catalog-link">Новинки</a>
+            </li>
+            <li class="header__catalog-item">
+              <a href="catalog.html" class="header__catalog-link">Сливочное</a>
+            </li>
+            <li class="header__catalog-item">
+              <a href="catalog.html" class="header__catalog-link">Щербеты</a>
+            </li>
+            <li class="header__catalog-item">
+              <a href="catalog.html" class="header__catalog-link">Фруктовый&nbsp;лёд</a>
+            </li>
+            <li class="header__catalog-item">
+              <a href="catalog.html" class="header__catalog-link">Мелорин</a>
+            </li>
+          </ul>
+        </li>
+        <li class="header__nav-item">
+          <a href="blank.html" class="header__nav-link">Доставка и оплата</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="blank.html" class="header__nav-link">О компании</a>
+        </li>
+      </ul>
+      <div class="header__user-menu">
+        <form class="header__user-item header__search-form" action="https://echo.htmlacademy.ru/" method="GET">
+          <button class="header__user-link header__user-link_search" type="submit">
+            <span class="visually-hidden">Поиск по сайту</span>
+          </button>
+          <label class="header__search-label">
+            <input class="header__search-input" type="search" name="search-input" placeholder="Крем-брюле" required>
+          </label>
+        </form>
+        <div class="header__user-item header__user-item_profile header__profile">
+          <a href="blank.html" class="header__user-link header__user-link_profile">
+            Вход<span class="visually-hidden"> в личный профиль</span>
+          </a>
+          <div class="header__profile-modal">
+            <form class="header__profile-form" action="https://echo.htmlacademy.ru/" method="POST">
+              <label class="header__profile-label">
+                <span class="visually-hidden" lang="en">E-mail</span>
+                <input class="header__profile-input" type="email" name="name" placeholder="email@example.com" required>
+              </label>
+              <label class="header__profile-label">
+                <span class="visually-hidden">Пароль</span>
+                <input class="header__profile-input" type="password" name="password" placeholder="&#183;&#183;&#183;&#183;&#183;&#183;" required>
+              </label>
+              <div class="header__profile-links">
+                <button class="button header__profile-submit" type="submit">Войти</button>
+                <a class="header__profile-help" href="blank.html">Забыли пароль?</a>
+                <a class="header__profile-help" href="blank.html">Новая регистрация</a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="header__user-item header__cart">
+          <a class="header__user-link header__cart-button" href="blank.html">
+            <svg class="header__cart-icon" viewBox="0 0 21 20" fill="none" aria-hidden="true">
+              <path class="header__cart-icon-frame" d="M7.03 20a2 2 0 002.02-2 2 2 0 00-2.02-2 2 2 0 00-2.01 2c0 1.1.9 2 2.01 2zM16.1 20a2 2 0 002.02-2 2 2 0 00-2.02-2 2 2 0 00-2.01 2c0 1.1.9 2 2.01 2zM5.7 2l-.24-2H0v2h3.67l1.5 13H19.3L21 2H5.7zm11.8 11H6.97l-1-9h12.72l-1.19 9z" fill="#ffffff"/>
+              <path class="header__cart-icon-fill" d="M5.94 4.03L6.97 13H17.5l1.2-8.97H5.93z" fill="none"/>
+            </svg>
+            <span class="visually-hidden">Открыть корзину. В корзине </span>Пусто
+          </a>
+          <div class="header__cart-modal">
+            <ul class="header__cart-list">
+              <li class="header__cart-item">
+                <a class="header__cart-link" href="blank.html">Пломбир с апельсиновым джемом</a>
+                <p class="header__cart-calc">
+                  1,5 кг х <span class="header__cart-calc_pale">200 руб.</span>
+                </p>
+                <p class="header__cart-cost">300 руб.</p>
+                <a class="header__cart-remove" href="blank.html">
+                  <span class="visually-hidden">Удалить товар из корзины</span>
+                </a>
+              </li>
+              <li class="header__cart-item item-cart">
+                <a class="header__cart-link" href="blank.html">Клубничный пломбир с присыпкой из белого шоколада</a>
+                <p class="header__cart-calc">
+                  1,5 кг х <span class="header__cart-calc_pale">300 руб.</span>
+                </p>
+                <p class="header__cart-cost">450 руб.</p>
+                <a class="header__cart-remove" href="blank.html">
+                  <span class="visually-hidden">Удалить товар из корзины</span>
+                </a>
+              </li>
+            </ul>
+            <p class="header__cart-total-price">Итого: 750 руб.</p>
+            <div class="header__cart-order-wrap">
+              <a href="blank.html" class="button header__cart-order">Оформить заказ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <p class="header__work-time">с 10 до 20, ежедневно</p>
+    <p class="header__tel">
+      <a class="header__tel-link" href="tel:+78124502525">8 812 450-25-25</a>
+    </p>
+  </header>
+</body>
 </html>
