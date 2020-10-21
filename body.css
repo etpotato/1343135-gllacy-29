@@ -1,0 +1,122 @@
+/* Fonts */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"),
+       url("../fonts/roboto.woff2") format("woff2"),
+       url("../fonts/roboto.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Roboto Medium"), local("Roboto-Medium"),
+       url("../fonts/robotomedium.woff2") format("woff2"),
+       url("../fonts/robotomedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto Bold"), local("Roboto-Bold"),
+       url("../fonts/robotobold.woff2") format("woff2"),
+       url("../fonts/robotobold.woff") format("woff");
+}
+
+/* Variables */
+
+:root {
+  --basic-white: #ffffff;
+  --basic-black: #323232;
+  --underline-color: rgba(255, 255, 255, 0.2);
+  --background-green: #849d8f;
+  --btn-active-background: #ededed;
+  --btn-current-background: #d07058;
+  --btn-shadow: #696969;
+  --catalog-hover-background: #fbded7;
+  --catalog-active-background: #f6b5a5;
+  --catalog-border-color:rgba(50, 50, 50, 0.2);
+  --modal-background: #f8f7f4;
+  --modal-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+  --modal-input-border: #d3d3d2;
+  --input-focus: rgba(46, 136, 228, 0.52);
+  --placeholder-color: #999999;
+  --button-background-color: #f26843;
+  --button-background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+  --button-hover-background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+  --button-hover-shadow: 0 1px 2px #AC1000;
+  --button-active-background: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+  --button-active-shadow: 0 2px 2px #942718 inset;
+  --button-shadow: box-shadow: 0 1px 2px rgba(172, 16, 0, 0.25);
+  --help-underline: rgba(50, 50, 50, 0.3);
+  --help-hover-color: #e84d37;
+  --help-hover-underline: #f8cac3;
+  --cart-cross-color: #2c2829;
+  --cart-calc-color: #ababab;
+  --cart-list-border: 1px solid #cacac7;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Body */
+
+.page__body {
+  margin: 0;
+  padding: 9px 0 0 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: var(--basic-white);
+  background-color: var(--background-green);
+}
+
+/* Image */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Hidden display-none */
+
+.hidden {
+  display: none;
+}
+
+/* Visually-hidden */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
+
+/* Container */
+
+.container {
+  margin: 0 auto;
+  padding-right: 27px;
+  padding-left: 27px;
+  min-width: 1200px;
+}
+
+/* Page header */
+
+.page__header {
+  position: relative;
+  margin-bottom: -22px;
+  z-index: 1;
+}
